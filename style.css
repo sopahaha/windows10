@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("imgs/backgrounds.png");
+    position: relative;
+}
+
+.toolbar{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #1F1F1F;
+}
+
+
+.icons{
+    display: flex;
+}
+
+
+.icons img{
+    width: 24px;
+    padding: 8px 14px;
+    object-fit: contain;
+}
+
+.icons .windows-icon{
+    
+    width: 16px;
+}
+
+
+.icons .chrome-icon{
+    border-bottom: 2px #76B9ED solid;
+}
+
+.icons-img{
+    width: 140px;
+    height: fit-content;
+    object-fit: contain;
+}
+
+.data{
+    height: 100%;
+    display: flex;
+    transition: all 0.3s;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.89);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 4px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.data:hover, .icons img:hover{
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+.resto{
+    display: flex;
+    align-items: center;
+    height: 42px;
+}
+
+.aquelebtn{
+    width: 4px;
+    border-left: 1px solid rgba(255, 255, 255, 0.233);
+    height: 100%;
+}
+
+.desktop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.shortcut{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4px;
+    width: min-content;
+    margin: 11px 2px;
+}
+
+.shortcut:hover{
+    background-color: #76b9ed3b;
+    outline: 2px solid #b9d8f075;
+}
+
+.shortcut p{
+    width: 64px;
+    word-wrap: break-word;
+}
+
+.shortcut img{
+    width: 46px;
+    margin-bottom: 8px;
+}
