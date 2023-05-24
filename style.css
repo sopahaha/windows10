@@ -118,3 +118,10 @@ p{
     width: 46px;
     margin-bottom: 8px;
 }
+
+@media (width > 1280px) {
+    body{
+        background-image: url("imgs/widths.PNG");
+    }
+    
+}
